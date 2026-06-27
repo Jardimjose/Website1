@@ -27,8 +27,9 @@
 }
 
 /* Footer*/
-.container {
+.footer {
     background-color: #272729;
+    color:  rgba(245, 245, 245, 0.859) ;
     display: flex;
     justify-content: space-around;
     padding: 40px;
@@ -36,18 +37,17 @@
     
 }
 
-div {
-    color: rgba(245, 245, 245, 0.859) ;
-}
 
-ul{
-    list-style: none;
-}
-
-a{
-    text-decoration: underline;
+.info-list a, .follow-list a, .email-link {
     color: rgba(245, 245, 245, 0.859);
+      
 }
+
+.info-list, .follow-list {
+    list-style: none;
+
+}
+
 .stay-updated {
     flex:0.7;
     gap: 150px;
@@ -59,13 +59,13 @@ a{
 
 }
 
-input {
+.email-add {
     background-color:rgba(245, 245, 245, 0.859);
     padding: 15px;
     border: 1px solid grey;
 
 }
-button {
+.signup-button {
     background-color: #272729;
     border-color: rgba(245, 245, 245, 0.859);
     border-style: solid;
