@@ -208,8 +208,11 @@ ul {
   color: white;
 }
 
-
-/* IMAGE GRID STYLING */
+/*
+=========================
+IMAGE GRID SECTION
+=========================
+*/
 .image-grid img {
     display: block;
     width: 100%;
@@ -220,11 +223,11 @@ ul {
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;                             
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 16px;                         
 }
 
 .grid-item {
@@ -435,3 +438,18 @@ Media Settings
     }
 }
 
+@media (min-width: 600px) {
+    .image-grid {
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 14px;
+        padding: 24px;
+    }
+}
+
+@media (min-width: 900px) {
+    .image-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+        padding: 40px;
+    }
+}
