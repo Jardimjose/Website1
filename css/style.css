@@ -237,14 +237,11 @@ ul {
     background-color: #f0f0f0
 }
 
-/* Footer*/
-@media (max-width:768px){
-    .footer{
-      flex-direction:column;
-      gap: 15px;
-    }
-    
-} 
+/*
+=========================
+FOOTER SECTION
+=========================
+*/
 .footer {
     background-color: #272729;
     color: whitesmoke ;
@@ -290,6 +287,7 @@ ul {
     padding:15px;
     border-radius: 50px;
     width: 85px;
+    cursor: pointer;
     color:whitesmoke;
     
 }
@@ -325,22 +323,28 @@ ul {
     font-style: normal;
 }
 
-/*--FEATURED PRODUCTS SECTION--*/
+/*
+=========================
+FEATURED PRODUCTS SECTION
+=========================
+*/
+
 .feat-products {
   background-color: #FFF9F0;
   display: block;
   justify-content: space-between;
-  padding: 10%;
+  padding: 50px;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 533;
+  font-weight: 500;
   font-style: normal;
 }
-  
+
 .feat-title {
   display: block;
-  margin-bottom: 1%;
-  font-size: xx-large;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  font-size: 2rem;
   
 }
 
@@ -354,6 +358,8 @@ ul {
   border-radius: 50px;
   width: 85px;
   margin-bottom: 1%;
+  margin-left: 1%;
+  cursor: pointer;
 }
 
 .view-all:hover {
@@ -361,21 +367,71 @@ ul {
   color: #e8e2d9;
 }
 
+.sold-badge {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background-color: #2c2a25;
+  color: white;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+
 .product-display {
   display: flex;
-  padding: 0.3rem;
-  width: 33.3%;
+  width: 100%;
   background-color:#FFF9F0;
   text-align: center;
 }
 
 .product-item img{
-  width: 50rem;
-  height: 70rem;
+  width: 105%;
+  height: 90%;
+  padding: 20px;
   object-fit: cover;
-  font-size: x-large; 
+  
+}
+.product-image {
+  position:relative; 
+  width: 105%;
+}
+.item-info {
+  font-size: 1.3rem
+}
+.item-price {
+  margin-top: 0.5rem;
 }
 
-.feat-title {
-  text-align: left;
+
+
+/*
+=========================
+Media Settings
+=========================
+*/
+
+@media (max-width:768px ) {
+  .product-display {
+    flex-direction: column;
+  }
+  .product-item {
+
+    width: 100%;
+  }
+  .feat-title {
+     font-size: 1.5 rem;
+  }
+.view-all {
+  margin-top:1rem;
+  }
+  .sold-badge{
+    font-size: 0.75rem;
+    padding:0.4rem;
+    right:20px
+  }
+  .footer{
+      flex-direction:column;
+      gap: 15px;
+    }
 }
+
